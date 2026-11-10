@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Clubhouse Digital | Websites for Australian sports clubs</title>
+<meta name="description" content="Premium, client-owned websites for Australian cricket, rugby and golf clubs. Fixed prices from $499, no monthly fees. You own it all.">
+<link rel="canonical" href="https://clubhousedigital.au/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#5A1622">
+<meta property="og:type" content="website"><meta property="og:title" content="Clubhouse Digital">
+<meta property="og:description" content="A club website you're proud of. Yours to keep.">
+<meta property="og:url" content="https://clubhousedigital.au/"><meta property="og:image" content="https://clubhousedigital.au/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="media/golf-poster.jpg" fetchpriority="high">
+<style>:root{color-scheme:light}html{-webkit-text-size-adjust:100%}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,500&family=Archivo:wdth,wght@62..125,400..800&family=Barlow+Condensed:ital,wght@1,800&family=Cormorant+Garamond:ital,wght@0,600;1,500&display=swap">
+<style>
+:root{
+  --bg:#F4ECDC;--paper:#FBF6EA;--ink:#24100F;--soft:#4A3832;--line:rgba(36,16,15,.2);
+  --ox:#5A1622;--night:#190A0D;--brass:#D6B25E;--claret:#8C2434;--green:#2F5D43;--cream:#F4ECDC;--cream-soft:#E9D9CF;
+  --f-h:'Source Serif 4',Georgia,serif;--f-b:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gl:max(16px,env(safe-area-inset-left,0px));--gr:max(16px,env(safe-area-inset-right,0px));
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.1rem/1.65 var(--f-b);overflow-x:clip;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure,table{margin:0}ul,ol{padding:0;list-style:none}
+a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.on-dark :focus-visible,.on-night :focus-visible{outline-color:var(--brass)}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:var(--gl);padding-right:var(--gr)}
+.band{padding-block:clamp(48px,7vw,96px)}
+.on-dark{background:var(--ox);color:var(--cream)}
+.on-night{background:var(--night);color:var(--cream)}
+section[id]{scroll-margin-top:76px}
+.eyebrow{font:600 1rem/1.4 var(--f-b);color:var(--soft)}
+.on-dark .eyebrow,.on-night .eyebrow{color:var(--brass)}
+.h1,.h2{font-family:var(--f-h);font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+.h1{font-size:clamp(2.7rem,7.4vw,6.2rem);line-height:.98}
+.h2{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.02}
+.h1 i,.h2 i{font-weight:500;color:var(--claret)}
+.on-dark .h2 i,.on-night .h1 i,.on-night .h2 i{color:var(--brass)}
+.lede{font-size:clamp(1.15rem,1.9vw,1.32rem);line-height:1.55;max-width:52ch;color:var(--soft)}
+.on-dark .lede,.on-night .lede{color:var(--cream-soft)}
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,48px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:.9em 1.4em;min-height:50px;font:700 1.05rem/1 var(--f-b);border:2px solid var(--ink);background:var(--brass);color:var(--ink);text-decoration:none;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--ox);color:var(--cream);border-color:var(--ox)}
+.btn-o{background:transparent}.btn-o:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.on-dark .btn,.on-night .btn{border-color:var(--brass)}
+.on-dark .btn:hover,.on-night .btn:hover{background:var(--cream);color:var(--ox);border-color:var(--cream)}
+.on-dark .btn-o,.on-night .btn-o{background:transparent;color:var(--cream);border-color:var(--cream)}
+.on-dark .btn-o:hover,.on-night .btn-o:hover{background:var(--cream);color:var(--ox)}
+.demo-bar{background:var(--ink);color:var(--brass);font:600 .9rem/1.4 var(--f-b);padding-block:8px;text-align:center}
+
+/* header */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(244,236,220,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.25rem/1 var(--f-h)}
+.brand svg{width:30px;height:30px;flex:none}
+.nav{display:none;gap:24px}.nav a{font:600 1rem var(--f-b);text-decoration:none;padding:10px 0;border-bottom:2px solid transparent}.nav a:hover{border-color:var(--ink)}
+.bar-r{display:flex;align-items:center;gap:18px}
+.hb{display:inline-flex;min-height:44px;padding:.55em 1em;font-size:.98rem}
+.hb .long{display:none}@media(min-width:560px){.hb .long{display:inline}.hb .short{display:none}}
+@media(max-width:380px){.brand{font-size:1.1rem}.brand svg{width:26px;height:26px}.bar-r{gap:8px}}
+.mb{width:46px;height:46px;display:grid;place-content:center;gap:6px;margin-right:-8px}
+.mb i{display:block;width:26px;height:2px;background:var(--ink);transition:transform .3s}
+.mb[aria-expanded="true"] i:first-of-type{transform:translateY(4px) rotate(45deg)}.mb[aria-expanded="true"] i:last-of-type{transform:translateY(-4px) rotate(-45deg)}
+@media(min-width:980px){.nav{display:flex}.mb{display:none}}
+.mm{position:fixed;inset:0;z-index:45;background:var(--bg);display:flex;flex-direction:column;justify-content:space-between;gap:20px;overflow:auto;padding:calc(env(safe-area-inset-top,0px) + 88px) var(--gr) calc(env(safe-area-inset-bottom,0px) + 24px) var(--gl);opacity:0;visibility:hidden;transition:opacity .25s,visibility 0s .25s}
+.mm.open{opacity:1;visibility:visible;transition:opacity .25s}
+.mm nav{display:flex;flex-direction:column}.mm nav a{font:700 clamp(2rem,9vw,2.8rem)/1 var(--f-h);text-decoration:none;padding:.3em 0;border-bottom:1px solid var(--line)}
+
+/* hero: full-bleed cinematic stage. Clips are listed in #hero-clips and the player cross-fades between them. */
+.hero{position:relative;isolation:isolate;min-height:clamp(620px,calc(100svh - 100px),880px);display:flex;align-items:flex-end;overflow:hidden;background:var(--night)}
+.hero-stage{position:absolute;inset:0;z-index:-2;overflow:hidden;will-change:transform}
+.hero-poster,.hero-stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 62%)}
+.hero-poster,.hero-stage video{transform:scale(1.06);transform-origin:0 62%}
+.hero-stage video{opacity:0;transition:opacity 1s ease}
+.hero-stage video.on{opacity:1}
+.hero-shade{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(to top,rgba(25,10,13,.94) 0%,rgba(25,10,13,.62) 30%,rgba(25,10,13,0) 62%),linear-gradient(90deg,rgba(25,10,13,.5) 0%,rgba(25,10,13,0) 58%),linear-gradient(to bottom,rgba(25,10,13,.32) 0%,rgba(25,10,13,0) 24%)}
+.hero-in{width:100%;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.9fr);gap:clamp(20px,4vw,64px);align-items:end;padding-block:clamp(150px,26vh,260px) clamp(28px,4.5vw,56px)}
+.hero .h1{margin-top:14px;font-size:clamp(2.5rem,5.3vw,5rem);text-shadow:0 2px 28px rgba(0,0,0,.4)}
+.hero .eyebrow{text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero .btns{margin-top:26px}
+.hero-side{display:grid;gap:14px;justify-items:start;padding-bottom:4px}
+.hero-side .lede{font-size:clamp(1.05rem,1.5vw,1.2rem);color:#F0E4DA;text-shadow:0 1px 14px rgba(0,0,0,.5)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.proof{font:600 1rem/1.5 var(--f-b);color:var(--brass);text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero-ctl{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:6px}
+.chap{display:flex;gap:8px;flex-wrap:wrap}
+.chap button{display:flex;align-items:center;gap:8px;min-height:40px;padding:.35em .7em;font:600 .92rem/1 var(--f-b);color:#E9D9CF;border:1px solid rgba(244,236,220,.35);background:rgba(25,10,13,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.chap button b{font:700 .85rem var(--f-b);color:var(--brass)}
+.chap button[aria-current="true"]{color:var(--ink);background:var(--brass);border-color:var(--brass)}.chap button[aria-current="true"] b{color:var(--ink)}
+.pp{min-height:40px;padding:.35em .8em;font:600 .92rem/1 var(--f-b);color:#E9D9CF;border:1px solid rgba(244,236,220,.35);background:rgba(25,10,13,.45)}
+.pp:hover,.chap button:hover{border-color:var(--brass)}
+.hero.static .chap{display:none}
+@media(max-width:860px){.hero-in{grid-template-columns:minmax(0,1fr);padding-top:clamp(120px,30vh,240px)}.hero-side{gap:10px}.hero-stage{inset:0 0 36% 0}.hero-poster,.hero-stage video{transform:none;object-position:var(--pos-m,54% 58%)}.hero-shade{background:linear-gradient(to top,#190A0D 0%,#190A0D 34%,rgba(25,10,13,.72) 46%,rgba(25,10,13,0) 66%),linear-gradient(to bottom,rgba(25,10,13,.3) 0%,rgba(25,10,13,0) 22%)}}
+@media(max-width:560px){.hero{min-height:clamp(620px,92svh,780px)}.hero-side .lede{font-size:1.02rem}.hero .btns .btn{flex:1 1 auto}}
+.facts{background:var(--brass);color:var(--ink)}
+.facts ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.facts li{padding:16px 14px;border-left:1px solid rgba(36,16,15,.3);font:600 1rem/1.3 var(--f-b);display:grid;gap:2px}.facts li:first-child{border-left:0;padding-left:0}
+.facts b{font:700 clamp(1.4rem,2.8vw,2rem)/1 var(--f-h)}
+@media(max-width:700px){.facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}.facts li:nth-child(3){border-left:0;padding-left:0}.facts li:nth-child(n+3){border-top:1px solid rgba(36,16,15,.3)}}
+
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,40px)}
+.why li{border-top:3px solid var(--ink);padding-top:16px;display:grid;gap:8px;align-content:start}
+.why b{font:700 2.6rem/1 var(--f-h);color:var(--claret)}
+.why h3{font:700 1.5rem/1.15 var(--f-h)}.why p{color:var(--soft)}
+@media(max-width:760px){.why{grid-template-columns:minmax(0,1fr)}.why li{grid-template-columns:auto minmax(0,1fr);column-gap:16px}.why b{grid-row:span 2;font-size:2rem}}
+
+/* scorecard */
+.sc{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(20px,4vw,48px);align-items:start}
+@media(max-width:860px){.sc{grid-template-columns:minmax(0,1fr)}}
+.sc-list{border:2px solid var(--ink);background:var(--paper)}
+.sc-list li+li{border-top:1px solid var(--line)}
+.sc-list label{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:14px 16px;cursor:pointer;align-items:center;min-height:54px}
+.sc-list input{width:24px;height:24px;margin:0;accent-color:var(--ox)}
+.sc-card{border:2px solid var(--ink);background:var(--ox);color:var(--cream);padding:24px;display:grid;gap:12px;position:sticky;top:84px}
+.sc-score{font:700 clamp(3.4rem,8vw,5rem)/.9 var(--f-h);color:var(--brass)}.sc-score small{font-size:.35em;color:var(--cream-soft)}
+.sc-card h3{font:700 1.5rem/1.15 var(--f-h)}.sc-card p{color:var(--cream-soft)}.sc-card .btn{justify-self:start;border-color:var(--brass)}
+.sc-src{margin-top:12px;font-size:1rem;color:var(--soft)}
+
+/* packages */
+.pk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid rgba(244,236,220,.4)}
+.pk>article{padding:clamp(22px,3vw,34px);display:grid;gap:14px;align-content:start;border-left:1px solid rgba(244,236,220,.4)}.pk>article:first-child{border-left:0}
+.pk .feat{background:var(--brass);color:var(--ink)}
+.pk h3{font:700 1.8rem/1 var(--f-h)}
+.pk .price{font:700 clamp(2.8rem,5.4vw,4rem)/.9 var(--f-h)}.pk .price small{font:600 1rem var(--f-b);display:block;margin-bottom:6px}
+.pk .for{color:var(--cream-soft)}.pk .feat .for{color:#3F3014}
+.pk ul{display:grid;gap:8px}.pk li{padding-left:1.4em;position:relative}.pk li::before{content:"";position:absolute;left:0;top:.72em;width:.7em;height:2px;background:currentColor}
+.pk .btn{justify-self:start}.pk .feat .btn{background:var(--ox);color:var(--cream);border-color:var(--ox)}.pk .feat .btn:hover{background:transparent;color:var(--ink);border-color:var(--ink)}
+.pk-note{margin-top:20px;color:var(--cream-soft);max-width:70ch}
+@media(max-width:900px){.pk{grid-template-columns:minmax(0,1fr)}.pk>article{border-left:0;border-top:1px solid rgba(244,236,220,.4)}.pk>article:first-child{border-top:0}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:4px solid var(--ink)}
+.steps li{padding:22px 18px 0 0;display:grid;gap:8px;align-content:start}
+.steps .n{font:700 1rem var(--f-b);color:var(--claret)}
+.steps h3{font:700 1.5rem/1.1 var(--f-h)}.steps p{color:var(--soft)}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:26px}}@media(max-width:520px){.steps{grid-template-columns:minmax(0,1fr)}}
+
+/* ownership */
+.own{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start}
+@media(max-width:900px){.own{grid-template-columns:minmax(0,1fr)}}
+.cost{width:100%;border-collapse:collapse;border-top:1px solid rgba(244,236,220,.4);border-bottom:1px solid rgba(244,236,220,.4)}
+.cost th,.cost td{text-align:left;vertical-align:top;padding:14px 16px;border-top:1px solid rgba(244,236,220,.3)}
+.cost th{font:600 1rem/1.4 var(--f-b);color:var(--cream-soft);width:42%}
+.cost td{font:600 1.08rem/1.4 var(--f-b)}
+.cost .zero td{color:var(--brass);font:700 1.3rem/1.2 var(--f-h)}
+@media(max-width:560px){.cost th,.cost td{display:block;width:auto;padding:0;border:0}.cost td{padding:2px 0 0;font-size:1.05rem}.cost tr{display:block;padding:14px 0;border-top:1px solid rgba(244,236,220,.3)}.cost tr:first-child{border-top:0}.cost th{padding-bottom:2px}.cost{border-top:1px solid rgba(244,236,220,.4)}}
+.dd{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
+@media(max-width:560px){.dd{grid-template-columns:minmax(0,1fr)}}
+.dd h3{font:700 1.3rem var(--f-h);margin-bottom:8px}.dd li{padding:9px 0 9px 1.4em;border-top:1px solid rgba(244,236,220,.3);position:relative;font-size:1.02rem}.dd li::before{position:absolute;left:0;font-weight:800;color:var(--brass)}
+.dd .y li::before{content:"+"}.dd .x li::before{content:"\2013"}
+
+/* faq */
+.faq details{border-top:1px solid var(--ink)}.faq details:last-child{border-bottom:1px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;font:700 1.25rem/1.3 var(--f-h);min-height:52px}
+.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";font:400 1.8rem/1 var(--f-b);flex:none;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}.faq p{padding:0 0 20px;color:var(--soft);max-width:66ch}
+
+/* contact */
+.ct{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,64px);align-items:start}
+@media(max-width:900px){.ct{grid-template-columns:minmax(0,1fr)}}
+.cdet{display:grid;margin-top:24px}.cdet div{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:12px;padding:12px 0;border-top:1px solid rgba(244,236,220,.3)}
+.cdet dt{color:var(--cream-soft);font-weight:600}.ph-t{background:rgba(244,236,220,.14);padding:.05em .4em;font-family:ui-monospace,Menlo,monospace;font-size:.95em;overflow-wrap:anywhere}
+.form-card{background:var(--paper);color:var(--ink);padding:clamp(20px,3vw,34px);display:grid;gap:18px;border:2px solid var(--brass)}
+.notlive{display:flex;gap:12px;align-items:flex-start;border:2px solid var(--ink);background:#F7E7B7;padding:12px 14px;font:600 1rem/1.4 var(--f-b)}
+.notlive b{background:var(--ink);color:var(--brass);padding:.3em .6em;font-size:.85rem;white-space:nowrap}.notlive span{min-width:0;overflow-wrap:anywhere}
+.cform{display:grid;gap:16px}
+.fld{display:grid;gap:6px}.fld label{font:700 1rem var(--f-b)}.opt{font-weight:500;color:var(--soft)}
+.cform input,.cform select,.cform textarea{font:400 1.1rem var(--f-b);color:var(--ink);background:#fff;border:1.5px solid rgba(36,16,15,.45);border-radius:0;padding:.75em .85em;min-height:50px;width:100%;max-width:100%}
+.cform textarea{min-height:110px;resize:vertical}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:3px solid var(--ox);outline-offset:1px;border-color:var(--ox)}
+.fld[data-bad] input,.fld[data-bad] textarea{border-color:var(--claret)}
+.err{color:var(--claret);font-weight:600;font-size:.95rem;min-height:1.1em}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}@media(max-width:560px){.row2{grid-template-columns:minmax(0,1fr)}}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.fine{font-size:1rem;color:var(--soft)}
+.result{border:2px solid var(--ink);background:#fff;padding:20px;display:grid;gap:12px}.result h3{font:700 1.5rem/1.1 var(--f-h)}
+.result .btn-o{color:var(--ink);border-color:var(--ink)}.result .btn-o:hover{background:var(--ink);color:var(--cream)}
+
+/* footer */
+.ft{background:var(--night);color:var(--cream-soft);padding-block:36px calc(36px + env(safe-area-inset-bottom,0px))}
+.ft .wrap{display:grid;gap:10px}.ft strong{font:700 1.3rem var(--f-h);color:var(--cream)}
+
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 78px);transform:translate(-50%,16px);background:var(--ink);color:#fff;padding:.8em 1.1em;font:600 1rem var(--f-b);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;border-left:4px solid var(--brass);max-width:92vw;z-index:70}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+[hidden]{display:none!important}
+
+/* GSAP start states exist only when GSAP loaded and motion is allowed */
+.anim .rv{opacity:0;transform:translateY(26px)}
+.anim .hero .rvh{opacity:0;transform:translateY(30px)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation:none!important}}
+
+/* showcase: scroll-driven 3D flip. Static cards by default; .live (JS, motion allowed) turns on the pinned scene */
+.show{background:var(--night);color:var(--cream);padding-block:clamp(56px,8vw,110px)}
+.show-pin{display:grid;gap:clamp(28px,4vw,56px)}
+.show-copy{display:grid;gap:16px;align-content:center;max-width:34rem}
+.show-copy .h2{color:var(--cream)}.show .h2 i{color:var(--brass)}.show .lede{color:var(--cream-soft)}.show.live .lede{display:none}
+.show-steps{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:clamp(18px,3vw,30px)}
+.show-steps li{display:grid;gap:6px;padding-top:16px;border-top:1px solid rgba(244,236,220,.3)}
+.show-steps b{font:600 1rem/1.2 var(--f-b);color:var(--brass)}
+.show-steps h3{font:700 clamp(1.5rem,2.6vw,2rem)/1.1 var(--f-h)}
+.show-steps p{color:var(--cream-soft)}
+.show-steps .card-img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:6px}
+.show-stage,.show-bar{display:none}.show:not(.live) .show-pin{padding-left:var(--gl);padding-right:var(--gr);max-width:1240px;margin-inline:auto;box-sizing:border-box}
+.show.live{padding:0}
+.show.live .show-run{height:420vh;position:relative}
+.show.live .show-pin{position:sticky;top:0;height:100vh;height:100svh;box-sizing:border-box;padding:96px var(--gr) 24px var(--gl);grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;max-width:1240px;margin-inline:auto}
+.show.live .show-stage{display:grid;place-items:center;perspective:1500px;min-width:0}
+.show.live .card-img{display:none}
+.show.live .show-steps li{opacity:.32;transition:opacity .4s}
+.show.live .show-steps li[aria-current=true]{opacity:1}
+.show.live .show-bar{display:block;height:3px;background:rgba(244,236,220,.25);margin-top:8px}
+.show.live .show-bar i{display:block;height:100%;width:0;background:var(--brass)}
+.dev{position:relative;width:min(100%,660px);aspect-ratio:16/10;transform-style:preserve-3d;will-change:transform}
+.dev-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:2px solid rgba(244,236,220,.5);background:#0f0608;box-shadow:0 40px 80px rgba(0,0,0,.55);display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+.dev-back{transform:rotateY(180deg)}
+.dev-bar{display:flex;gap:6px;align-items:center;padding:8px 12px;background:#241418}
+.dev-bar i{width:9px;height:9px;border-radius:50%;background:#6b5a55;display:block}
+.dev-bar span{margin-left:10px;font:500 11px/1 var(--f-b);color:#c9b9b1;background:#150a0d;padding:5px 12px;border-radius:12px}
+.scr{position:relative;overflow:hidden;font-size:clamp(9px,1.35vw,15px)}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .25s}
+.scr img.on{opacity:1}
+.scr-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,10,13,.55),rgba(25,10,13,.1) 40%,rgba(25,10,13,.85))}
+.scr-nav{position:absolute;left:1.6em;right:1.6em;top:1.2em;display:flex;gap:1.6em;align-items:center;font:600 1em/1 var(--f-b);color:var(--cream)}
+.scr-nav b{font:700 1.25em/1 var(--f-h);margin-right:auto}
+.scr-nav u{text-decoration:none;background:var(--brass);color:var(--ink);padding:.6em 1em;font-weight:700}
+.scr-t{position:absolute;left:1.6em;bottom:1.6em;right:1.6em;color:var(--cream);font:700 3.2em/1 var(--f-h)}
+.scr-t i{color:var(--brass);font-weight:500;display:block}
+.scr-t small{display:block;font:600 .36em/1.4 var(--f-b);color:var(--brass);margin-bottom:.8em}
+.dev-shadow{position:absolute;left:10%;right:10%;bottom:-8%;height:6%;background:radial-gradient(ellipse at center,rgba(0,0,0,.55),transparent 70%);transform:translateZ(-1px)}
+@media(max-width:860px){
+ .show.live .show-pin{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;align-content:center;gap:22px;padding-top:84px}
+ .show.live .show-stage{order:-1}
+ .show.live .show-copy .lede{display:none}
+ .show.live .show-steps li{display:none}.show.live .show-steps li[aria-current=true]{display:grid}
+ .show-copy{gap:10px}
+ .scr{font-size:clamp(7px,2.1vw,12px)}
+}
+@media(min-width:861px){.show:not(.live) .show-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.show:not(.live) .show-copy{max-width:none}}
+
+</style>
+
+
+<header class="hdr"><div class="wrap bar">
+  <a class="brand" href="#top" aria-label="Clubhouse Digital, back to top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#5A1622"/><path d="M7 25V12l9-6 9 6v13" fill="none" stroke="#F4ECDC" stroke-width="2.4" stroke-linejoin="round"/><rect x="13" y="17" width="6" height="8" fill="#D6B25E"/></svg>Clubhouse Digital</a>
+  <nav class="nav" aria-label="Main"><a href="#showcase">Showcase</a><a href="#scorecard">Scorecard</a><a href="#packages">Packages</a><a href="#process">Process</a><a href="#ownership">Ownership</a><a href="#faq">FAQ</a></nav>
+  <div class="bar-r"><a class="btn hb" href="#contact"><span class="long">Get a free preview</span><span class="short">Preview</span></a><button class="mb" id="mb" aria-expanded="false" aria-controls="mm" aria-label="Menu"><i></i><i></i></button></div>
+</div></header>
+<div class="mm" id="mm"><nav aria-label="Mobile"><a href="#showcase">Showcase</a><a href="#scorecard">Scorecard</a><a href="#packages">Packages</a><a href="#process">Process</a><a href="#ownership">Ownership</a><a href="#faq">FAQ</a></nav><a class="btn" href="#contact">Get a free preview</a></div>
+
+<main id="top">
+<section class="hero on-night" id="hero" aria-labelledby="h1">
+  <div class="hero-stage" id="stage"><img class="hero-poster" src="media/golf-poster.jpg" alt="Aerial view of a coastal golf hole beside the ocean at first light" fetchpriority="high" decoding="async"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div><p class="eyebrow rvh">Websites for cricket, rugby and golf clubs</p><h1 class="h1 rvh" id="h1">A club website you're proud of. <i>Yours to keep.</i></h1>
+      <div class="btns rvh"><a class="btn" href="#contact">Get a free preview</a><a class="btn btn-o" href="#showcase">See how it works</a></div></div>
+    <div class="hero-side rvh"><p class="lede">Premium websites at a fixed price. Your booking and payment systems stay as they are.</p>
+      <p class="proof">From $499 &middot; No monthly fees &middot; You own it all</p>
+      <div class="hero-ctl"><ol class="chap" id="chap" aria-label="Hero scenes"></ol><button class="pp" id="pp" type="button" aria-pressed="false">Pause video</button></div></div>
+  </div>
+  <!-- HERO CLIPS: add one <li> per scene (golf, cricket, rugby...). The player cross-fades in order. Provide mp4 + webm,
+       a small (720w) version for phones, and a poster. data-pos sets the crop focus on narrow screens. -->
+  <ol id="hero-clips" hidden>
+    <li data-label="Golf" data-poster="media/golf-poster.jpg" data-pos="50% 62%" data-mp4="media/golf-hero.mp4" data-webm="media/golf-hero.webm" data-sm-mp4="media/golf-hero-sm.mp4" data-sm-webm="media/golf-hero-sm.webm"></li>
+    <li data-label="Cricket" data-poster="media/cricket-poster.jpg" data-pos="50% 62%" data-mp4="media/cricket-hero.mp4" data-webm="media/cricket-hero.webm" data-sm-mp4="media/cricket-hero-sm.mp4" data-sm-webm="media/cricket-hero-sm.webm"></li>
+    <li data-label="Rugby" data-poster="media/rugby-poster.jpg" data-pos="50% 55%" data-mp4="media/rugby-hero.mp4" data-webm="media/rugby-hero.webm" data-sm-mp4="media/rugby-hero-sm.mp4" data-sm-webm="media/rugby-hero-sm.webm"></li>
+  </ol>
+</section>
+<div class="facts"><div class="wrap"><ul><li><b>From $499</b>fixed price, AUD</li><li><b>$0</b>monthly fees to us</li><li><b>100%</b>yours to keep</li><li><b>Your own</b>hosting and domain</li></ul></div></div>
+
+<section class="show" id="showcase" aria-labelledby="show-h">
+ <div class="show-run" id="show-run">
+  <div class="show-pin">
+   <div class="show-copy">
+    <p class="eyebrow" style="color:var(--brass)">One site, three sports</p>
+    <h2 class="h2" id="show-h">Built around <i>your</i> club.</h2>
+    <p class="lede">Cinematic first impressions, clear fixtures and joining info, and your own booking and payment tools linked in as they are.</p>
+    <ol class="show-steps">
+     <li data-i="0"><img class="card-img" src="media/golf-poster.jpg" alt="Golf course at the coast" loading="lazy"><b>01 Golf</b><h3>The course sells itself.</h3><p>Big, calm photography and a one-tap link to your tee-time system.</p></li>
+     <li data-i="1"><img class="card-img" src="media/cricket-poster.jpg" alt="Cricket oval and pavilion at sunrise" loading="lazy"><b>02 Cricket</b><h3>Match day, sorted.</h3><p>Fixtures, scorecards, juniors and sponsors in one clean place.</p></li>
+     <li data-i="2"><img class="card-img" src="media/rugby-poster.jpg" alt="Rugby field at dusk" loading="lazy"><b>03 Rugby</b><h3>From grass roots to grade.</h3><p>Draw, results and team lists, junior sign-ups and sponsors. All easy to find on a phone.</p></li>
+    </ol>
+    <div class="show-bar" aria-hidden="true"><i id="show-fill"></i></div>
+   </div>
+   <div class="show-stage" aria-hidden="true">
+    <div class="dev" id="dev">
+     <div class="dev-face dev-front"><div class="dev-bar"><i></i><i></i><i></i><span>yourclub.com.au</span></div>
+      <div class="scr"><img id="sf0" class="on" src="media/golf-poster.jpg" alt=""><img id="sf2" src="media/rugby-poster.jpg" alt=""><div class="scr-shade"></div>
+       <div class="scr-nav"><b>Your Club</b><span>Course</span><span>Visit</span><u>Book</u></div>
+       <div class="scr-t" id="ft"><small>Golf</small>A round worth<i>the drive.</i></div></div></div>
+     <div class="dev-face dev-back"><div class="dev-bar"><i></i><i></i><i></i><span>yourclub.com.au</span></div>
+      <div class="scr"><img class="on" src="media/cricket-poster.jpg" alt=""><div class="scr-shade"></div>
+       <div class="scr-nav"><b>Your Club</b><span>Fixtures</span><span>Juniors</span><u>Join</u></div>
+       <div class="scr-t"><small>Cricket</small>Match day,<i>sorted.</i></div></div></div>
+     <div class="dev-shadow"></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="why" style="background:#EADFC8;padding-block:clamp(40px,6vw,72px)" aria-labelledby="why-h"><div class="wrap">
+  <div class="sec-head rv"><p class="eyebrow">Why clubs pick us</p><h2 class="h2" id="why-h">Built around <i>your club.</i></h2></div>
+  <ul class="why">
+    <li class="rv"><b>01</b><h3>We upgrade the look</h3><p>Booking, payments and memberships stay on your current system. We link to them cleanly.</p></li>
+    <li class="rv"><b>02</b><h3>Free preview first</h3><p>Send a logo and photos. See your homepage before you pay.</p></li>
+    <li class="rv"><b>03</b><h3>Built for phones</h3><p>Fast pages. Tee times, fixtures and sign-up are one tap away.</p></li>
+  </ul>
+</div></section>
+
+<section class="band" id="scorecard" aria-labelledby="sc-h"><div class="wrap">
+  <div class="sec-head rv"><p class="eyebrow">Scorecard</p><h2 class="h2" id="sc-h">How's your club's site <i>batting?</i></h2><p class="lede">Tick what your site does today.</p></div>
+  <div class="sc rv">
+    <ul class="sc-list">
+      <li><label><input type="checkbox" class="sc-i"><span>Sport and suburb shown at the top</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>Fast and easy to use on a phone</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>Join button visible without scrolling</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>Fees and membership shown upfront</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>This season's fixtures or dates listed</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>Phone or email, not only social media</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>Looks good enough for sponsor logos</span></label></li>
+      <li><label><input type="checkbox" class="sc-i"><span>A volunteer can update it, and the domain is the club's</span></label></li>
+    </ul>
+    <div class="sc-card" aria-live="polite"><div class="sc-score"><span id="sc-n">0</span><small> / 8</small></div><h3 id="sc-t">Tick what applies</h3><p id="sc-m">Your score shows here.</p><a class="btn" href="#contact" id="sc-cta">Get my free preview</a></div>
+  </div>
+  <p class="sc-src">Checks adapted from TidyHQ's Australian sports club checklist.</p>
+</div></section>
+
+<section class="band on-dark" id="packages" aria-labelledby="pk-h"><div class="wrap">
+  <div class="sec-head rv"><p class="eyebrow">Packages</p><h2 class="h2" id="pk-h">Fixed prices. <i>No surprises.</i></h2></div>
+  <div class="pk rv">
+    <article><h3>Club Starter</h3><p class="price"><small>AUD</small>$499</p><p class="for">A sharp front door.</p><ul><li>Premium single-page website</li><li>Mobile-first design</li><li>Your logo, colours and photos</li><li>Files and handover guide</li></ul><a class="btn btn-o" href="#contact" data-pick="Club Starter">Choose Starter</a></article>
+    <article class="feat"><h3>Club Pro</h3><p class="price"><small>AUD</small>$999</p><p class="for">The full club site. Most popular.</p><ul><li>Up to six pages</li><li>Club info, teams, registration</li><li>Fixtures, news and sponsors</li><li>Files and handover guide</li></ul><a class="btn" href="#contact" data-pick="Club Pro">Choose Pro</a></article>
+    <article><h3>Golf Premium</h3><p class="price"><small>AUD</small>$1,999</p><p class="for">For golf courses.</p><ul><li>Up to eight pages</li><li>Course, memberships, visitors, events</li><li>Booking buttons linked to your system</li><li>Files and handover guide</li></ul><a class="btn btn-o" href="#contact" data-pick="Golf Premium">Choose Golf</a></article>
+  </div>
+  <p class="pk-note">One-off build fee. No subscription to us. You pay your own hosting and domain directly to the provider. Photos and video are extra. GST confirmed before launch.</p>
+</div></section>
+
+<section class="band" id="process" aria-labelledby="pr-h"><div class="wrap">
+  <div class="sec-head rv"><p class="eyebrow">Process</p><h2 class="h2" id="pr-h">Four steps. <i>Days, not months.</i></h2></div>
+  <ol class="steps">
+    <li class="rv"><span class="n">Step 1</span><h3>Free preview</h3><p>Send a logo and photos. We show you a first look.</p></li>
+    <li class="rv"><span class="n">Step 2</span><h3>Agree and build</h3><p>Approve the look and pay a deposit. We build, you review.</p></li>
+    <li class="rv"><span class="n">Step 3</span><h3>Launch</h3><p>Live on your hosting and domain, with a simple guide.</p></li>
+    <li class="rv"><span class="n">Step 4</span><h3>Handover</h3><p>You get every file. No ongoing fees to us.</p></li>
+  </ol>
+</div></section>
+
+<section class="band on-dark" id="ownership" aria-labelledby="ow-h"><div class="wrap own">
+  <div class="rv"><p class="eyebrow">Ownership</p><h2 class="h2" id="ow-h" style="margin-top:14px">You own it. <i>All of it.</i></h2>
+    <p class="lede" style="margin-top:16px">We charge once to build. No agency subscription, ever. You pay your own hosting and domain directly to the provider, in your club's name.</p>
+    <div class="dd"><div class="y"><h3>What we do</h3><ul><li>Design and build the site</li><li>Organise content with you</li><li>Hand over clean files</li><li>Link to your current systems</li></ul></div><div class="x"><h3>What we don't</h3><ul><li>Run bookings or payments</li><li>Host your site</li><li>Hold your domain</li><li>Charge a monthly fee</li></ul></div></div></div>
+  <table class="cost rv"><caption style="position:absolute;left:-9999px">What you pay and who you pay</caption>
+    <tr><th scope="row">Build fee to Clubhouse Digital</th><td>One-off: $499, $999 or $1,999 AUD</td></tr>
+    <tr class="zero"><th scope="row">Ongoing fee to Clubhouse Digital</th><td>$0. No subscription.</td></tr>
+    <tr><th scope="row">Domain name</th><td>Paid by you, direct to your registrar</td></tr>
+    <tr><th scope="row">Hosting</th><td>Paid by you, direct to VentraIP or your host</td></tr>
+    <tr><th scope="row">Photography and video</th><td>Optional, quoted separately</td></tr>
+  </table>
+</div></section>
+
+<section class="band" id="faq" aria-labelledby="fq-h"><div class="wrap">
+  <div class="sec-head rv"><p class="eyebrow">FAQ</p><h2 class="h2" id="fq-h">Fair questions.</h2></div>
+  <div class="faq rv">
+    <details><summary>What do I pay after the build?</summary><p>Nothing to us. Your hosting and domain are paid by you, directly to the provider, in your club's name. We charge no ongoing agency subscription.</p></details>
+    <details><summary>Do you build the booking or payment system for golf courses?</summary><p>No. Your course already has a system, and we build the website around it. Our job is how it looks and how easy it is to reach: prominent booking buttons that open your own system.</p></details>
+    <details><summary>Who owns the website?</summary><p>You do. You receive the files, and your domain and hosting sit in your own account.</p></details>
+    <details><summary>What if we want changes later?</summary><p>Any web developer can edit the files, including us if you ask. Content sits in one clear place, so simple updates are quick.</p></details>
+    <details><summary>Why is it cheaper than an agency?</summary><p>We use AI-assisted design and a repeatable build, and skip the long agency process. You get a fixed price and a tight scope.</p></details>
+    <details><summary>Will the contact form on my site work?</summary><p>Yes, on your delivered site. It needs a small form handler on your hosting, which we set up and test on your account before handover.</p></details>
+  </div>
+</div></section>
+
+<section class="band on-dark" id="contact" aria-labelledby="ct-h"><div class="wrap ct">
+  <div class="rv"><p class="eyebrow">Contact</p><h2 class="h2" id="ct-h" style="margin-top:14px">Get a free <i>preview.</i></h2>
+    <p class="lede" style="margin-top:14px">Tell us about your club. We'll show you your new homepage.</p>
+    <dl class="cdet"><div><dt>Email</dt><dd><a href="mailto:hello@clubhousedigital.au">hello@clubhousedigital.au</a></dd></div><div><dt>Based in</dt><dd>Sydney, Australia</dd></div><div><dt>Reply time</dt><dd>Within two business days</dd></div></dl></div>
+  <div class="form-card rv">
+    <div class="notlive"><b>COMING SOON</b><span>Online enquiries are being switched on. Until then, email hello@clubhousedigital.au and we will reply within two business days.</span></div>
+    <form class="cform" id="cf" novalidate data-endpoint="">
+      <div class="row2">
+        <div class="fld"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
+        <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></div>
+      </div>
+      <div class="row2">
+        <div class="fld"><label for="f-club">Club or course</label><input id="f-club" name="club" required><span class="err" aria-live="polite"></span></div>
+        <div class="fld"><label for="f-pkg">Package</label><select id="f-pkg" name="pkg"><option>Not sure yet</option><option>Club Starter</option><option>Club Pro</option><option>Golf Premium</option></select></div>
+      </div>
+      <div class="fld"><label for="f-msg">What do you need? <span class="opt">(optional)</span></label><textarea id="f-msg" name="msg"></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" type="submit">Check my details <span aria-hidden="true">&rarr;</span></button>
+      <p class="fine">Until the form is connected, use the copy button after checking to keep your enquiry.</p>
+    </form>
+    <div class="result" id="sent" hidden tabindex="-1"><h3>Thanks, we have your enquiry</h3><p>We will reply within two business days with next steps for your free preview.</p></div>
+    <div class="result" id="result" hidden tabindex="-1"><h3>Nothing was sent</h3><p>Your details look fine, but this form isn't connected yet, so no message has been delivered. Copy your enquiry and send it once our email is live.</p><div class="btns"><button class="btn" type="button" id="copy">Copy my enquiry</button><button class="btn btn-o" type="button" id="again">Edit details</button></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer class="ft"><div class="wrap"><strong>Clubhouse Digital</strong><p>Premium websites for Australian sports clubs and golf courses. Photography shown is placeholder.</p></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+'use strict';
+function $(s,c){return (c||document).querySelector(s)}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var tt;function toast(m){var e=$('#toast');e.textContent=m;e.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){e.classList.remove('show')},2600)}
+
+/* menu */
+var mb=$('#mb'),mm=$('#mm');
+function menu(open){mb.setAttribute('aria-expanded',open?'true':'false');mm.classList.toggle('open',open);document.body.classList.toggle('lock',open)}
+mb.addEventListener('click',function(){menu(mb.getAttribute('aria-expanded')!=='true')});
+$$('#mm a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+
+/* package buttons preselect the form */
+$$('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var s=$('#f-pkg');if(s)s.value=a.getAttribute('data-pick')})});
+
+/* scorecard */
+var items=$$('.sc-i'),n=$('#sc-n'),t=$('#sc-t'),m=$('#sc-m');
+function score(){var c=items.filter(function(x){return x.checked}).length;n.textContent=c;
+ if(!c){t.textContent='Tick what applies';m.textContent='Your score shows here.'}
+ else if(c<=3){t.textContent='Costing you members and sponsors';m.textContent='A new front door would pay for itself. We can mock up your homepage free.'}
+ else if(c<=6){t.textContent='Good bones, a few leaks';m.textContent='A few fixes would lift how the club looks to new families and sponsors.'}
+ else{t.textContent='Strong innings';m.textContent='You are close. A brand and polish pass would finish it.'}}
+items.forEach(function(x){x.addEventListener('change',score)});
+$('#sc-cta').addEventListener('click',function(){var f=$('#f-msg');if(f&&!f.value&&n.textContent!=='0'){f.value='My club\'s site scored '+n.textContent+'/8 on your scorecard.'}});
+
+/* contact form: validates, never claims anything was sent */
+var form=$('#cf'),res=$('#result');
+function bad(id,msg){var f=$(id).closest('.fld');var e=$('.err',f);if(msg){f.setAttribute('data-bad','');e.textContent=msg}else{f.removeAttribute('data-bad');e.textContent=''}return !msg}
+form.addEventListener('submit',function(ev){
+ ev.preventDefault();
+ if($('[name=website]',form).value)return;
+ var ok=true;
+ ok=bad('#f-name',$('#f-name').value.trim()?'':'Please add your name.')&&ok;
+ ok=bad('#f-email',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#f-email').value.trim())?'':'Please add a valid email.')&&ok;
+ ok=bad('#f-club',$('#f-club').value.trim()?'':'Please add your club or course.')&&ok;
+ if(!ok){var first=$('.fld[data-bad] input',form);if(first)first.focus();return}
+ /* INTEGRATION POINT: when a real endpoint exists, set data-endpoint on the form, POST the fields here,
+    and only show a success message after the server confirms. Until then nothing is sent. */
+ var ep=form.getAttribute('data-endpoint');
+ if(!ep){form.hidden=true;res.hidden=false;res.focus();return}
+ var btn=$('button[type=submit]',form);btn.disabled=true;var lbl=btn.innerHTML;btn.textContent='Sending...';
+ fetch(ep,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){return r.json().then(function(j){return {ok:r.ok&&j&&j.ok===true}},function(){return {ok:false}})}).then(function(o){
+  btn.disabled=false;btn.innerHTML=lbl;
+  if(o.ok){form.hidden=true;$('#sent').hidden=false;$('#sent').focus()}else{toast('Sorry, that did not send. Please email us directly.')}
+ },function(){btn.disabled=false;btn.innerHTML=lbl;toast('Sorry, that did not send. Please email us directly.')});
+});
+$('#again').addEventListener('click',function(){res.hidden=true;form.hidden=false;$('#f-name').focus()});
+$('#copy').addEventListener('click',function(){
+ var txt='Clubhouse Digital enquiry\nName: '+$('#f-name').value+'\nEmail: '+$('#f-email').value+'\nClub: '+$('#f-club').value+'\nPackage: '+$('#f-pkg').value+'\nNotes: '+$('#f-msg').value;
+ function fb(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast('Enquiry copied')}catch(e){toast('Select and copy manually')}document.body.removeChild(ta)}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){toast('Enquiry copied')},fb)}else fb()
+});
+
+
+/* hero video player: two layers cross-fade through the clips listed in #hero-clips */
+(function(){
+ var hero=$('#hero'),stage=$('#stage'),chap=$('#chap'),pp=$('#pp');
+ var clips=$$('#hero-clips li').map(function(li){return {label:li.dataset.label,poster:li.dataset.poster,pos:li.dataset.pos,mp4:li.dataset.mp4,webm:li.dataset.webm,smMp4:li.dataset.smMp4,smWebm:li.dataset.smWebm}});
+ var conn=navigator.connection||{};
+ if(!clips.length){hero.classList.add('static');pp.hidden=true;return}
+ var manual=!!(reduce||conn.saveData);
+ var probe=document.createElement('video');
+ var useMp4=probe.canPlayType&&probe.canPlayType('video/mp4; codecs="avc1.4D401F"')!=='';
+ var small={get matches(){var t=(navigator.connection||{}).effectiveType;return t==='2g'||t==='slow-2g'||t==='3g'}};
+ function url(c){var sm=small.matches;return useMp4?(sm?c.smMp4:c.mp4):(sm?c.smWebm:c.webm)}
+ function mk(){var v=document.createElement('video');v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('muted','');v.preload='auto';v.setAttribute('aria-hidden','true');v.tabIndex=-1;v.disablePictureInPicture=true;stage.appendChild(v);return v}
+ var layers=[mk(),mk()],cur=0,idx=0,userPaused=false,inView=true,switching=false,started=false;
+ function aim(v,c){v.src=url(c);v.style.setProperty('--pos',c.pos||'50% 62%');v.load()}
+ function marks(){$$('button',chap).forEach(function(b,i){b.setAttribute('aria-current',i===idx?'true':'false')})}
+ chap.innerHTML=clips.map(function(c,i){return '<li><button type="button" data-i="'+i+'"><b>'+String(i+1).padStart(2,'0')+'</b>'+c.label+'</button></li>'}).join('');
+ function show(i){var v=layers[cur],o=layers[1-cur];idx=i;marks();aim(v,clips[i]);
+  var p=v.play();if(p&&p.then){p.then(function(){started=true;v.classList.add('on');o.classList.remove('on');preloadNext()}).catch(function(){manual=true;userPaused=true;hero.classList.add('static');pp.setAttribute('aria-pressed','true');pp.textContent='Play video'})}}
+ function preloadNext(){var o=layers[1-cur];aim(o,clips[(idx+1)%clips.length])}
+ function advance(to){if(switching||userPaused||!inView)return;switching=true;var o=layers[1-cur],v=layers[cur];idx=to==null?(idx+1)%clips.length:to;
+  var go=function(){o.currentTime=0;var p=o.play();var fin=function(){o.classList.add('on');v.classList.remove('on');setTimeout(function(){v.pause();cur=1-cur;marks();switching=false;preloadNext()},1050)};
+   if(p&&p.then){p.then(fin).catch(function(){switching=false})}else fin()};
+  if(to!=null){aim(o,clips[idx])}
+  if(o.readyState>=3)go();else o.addEventListener('canplay',function f(){o.removeEventListener('canplay',f);go()});}
+ layers.forEach(function(v,k){v.addEventListener('timeupdate',function(){if(k===cur&&v.duration&&v.duration-v.currentTime<1.1)advance()});v.addEventListener('ended',function(){if(k===cur)advance()})});
+ chap.addEventListener('click',function(e){var b=e.target.closest('button');if(b){var i=+b.dataset.i;if(i!==idx)advance(i)}});
+ pp.addEventListener('click',function(){if(manual){manual=false;userPaused=false;hero.classList.remove('static');pp.setAttribute('aria-pressed','false');pp.textContent='Pause video';show(idx);return}userPaused=!userPaused;pp.setAttribute('aria-pressed',userPaused?'true':'false');pp.textContent=userPaused?'Play video':'Pause video';var v=layers[cur];if(userPaused)v.pause();else v.play()});
+ if('IntersectionObserver' in window){new IntersectionObserver(function(es){inView=es[0].isIntersecting;var v=layers[cur];if(!started)return;if(!inView)v.pause();else if(!userPaused)v.play()},{threshold:.05}).observe(hero)}
+ document.addEventListener('visibilitychange',function(){var v=layers[cur];if(!started)return;if(document.hidden)v.pause();else if(!userPaused&&inView)v.play()});
+ if(manual){hero.classList.add('static');userPaused=true;pp.setAttribute('aria-pressed','true');pp.textContent='Play video'}else show(0);
+})();
+
+/* motion: GSAP only if it loaded and motion is allowed. Content stays visible otherwise. */
+var G=window.gsap,ST=window.ScrollTrigger;
+if(G&&ST&&!reduce){
+ var root=document.documentElement;root.classList.add('anim');G.registerPlugin(ST);
+ var done=false;
+ var tl=G.timeline({defaults:{ease:'power3.out'},onComplete:function(){done=true}});
+ tl.to('.hero .rvh',{opacity:1,y:0,duration:.8,stagger:.1},0)
+   .from('#stage',{scale:1.1,duration:2.2,ease:'power2.out'},0);
+ G.to('#stage',{yPercent:7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+ ST.batch('.rv',{start:'top 90%',once:true,onEnter:function(b){G.to(b,{opacity:1,y:0,duration:.75,stagger:.09,ease:'power3.out',overwrite:true,clearProps:'transform'})}});
+ window.addEventListener('load',function(){ST.refresh()});
+ /* safety: if the intro never finished, drop the hidden states so nothing stays invisible */
+ setTimeout(function(){if(!done){root.classList.remove('anim')}},5000);
+}
+})();
+
+/* showcase: scroll-driven 3D flip between the three sports */
+(function(){
+ var $=function(q,r){return (r||document).querySelector(q)},$$=function(q,r){return [].slice.call((r||document).querySelectorAll(q))},reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var sec=$('#showcase'),run=$('#show-run'),dev=$('#dev');if(!sec||!dev||reduce)return;
+ sec.classList.add('live');
+ var steps=$$('.show-steps li',sec),fill=$('#show-fill'),sf0=$('#sf0'),sf2=$('#sf2'),ft=$('#ft');
+ var txt=[['Golf','A round worth','the drive.'],null,['Rugby','From grass roots','to grade.']];
+ var curF=-1,curC=-1,tick=false;
+ function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
+ function render(){tick=false;
+  var r=run.getBoundingClientRect(),span=Math.max(1,r.height-innerHeight),p=Math.min(1,Math.max(0,-r.top/span));
+  var s=Math.min(2.9999,p*3),i=Math.floor(s),f=s-i;
+  var t=i<2?Math.min(1,Math.max(0,(f-.6)/.4)):0,e=ease(t);
+  var ang=180*(i+e),arc=Math.sin(Math.PI*e);
+  dev.style.transform='rotateX('+(-4+arc*6)+'deg) rotateY('+(ang+(p-.5)*8)+'deg) translateY('+(-arc*22)+'px) scale('+(1+arc*.05)+')';
+  var chap=t>.5?i+1:i,fr=i<1?0:2;
+  if(fr!==curF){curF=fr;sf0.classList.toggle('on',fr===0);sf2.classList.toggle('on',fr===2);var x=txt[fr];ft.innerHTML='<small>'+x[0]+'</small>'+x[1]+'<i>'+x[2]+'</i>'}
+  if(chap!==curC){curC=chap;steps.forEach(function(li,k){li.setAttribute('aria-current',k===chap?'true':'false')})}
+  fill.style.width=(p*100)+'%'}
+ function req(){if(!tick){tick=true;requestAnimationFrame(render)}}
+ addEventListener('scroll',req,{passive:true});addEventListener('resize',req);render();
+})();
+</script>
+
+</body>
+</html>
