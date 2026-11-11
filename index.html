@@ -388,22 +388,23 @@ section[id]{scroll-margin-top:76px}
 <section class="band on-dark" id="contact" aria-labelledby="ct-h"><div class="wrap ct">
   <div class="rv"><p class="eyebrow">Contact</p><h2 class="h2" id="ct-h" style="margin-top:14px">Get a free <i>preview.</i></h2>
     <p class="lede" style="margin-top:14px">Tell us about your club. We'll show you your new homepage.</p>
-    <dl class="cdet"><div><dt>Email</dt><dd><a href="mailto:hello@clubhousedigital.au">hello@clubhousedigital.au</a></dd></div><div><dt>Based in</dt><dd>Sydney, Australia</dd></div><div><dt>Reply time</dt><dd>Within two business days</dd></div></dl></div>
+    <dl class="cdet"><div><dt>Email</dt><dd><a href="mailto:team@clubhousedigital.au">team@clubhousedigital.au</a></dd></div><div><dt>Text us</dt><dd><a href="sms:+61410946767">0410 946 767</a></dd></div><div><dt>Based in</dt><dd>Sydney, Australia</dd></div><div><dt>Reply time</dt><dd>Within two business days</dd></div></dl></div>
   <div class="form-card rv">
-    <div class="notlive"><b>COMING SOON</b><span>Online enquiries are being switched on. Until then, email hello@clubhousedigital.au and we will reply within two business days.</span></div>
-    <form class="cform" id="cf" novalidate data-endpoint="">
+        <form class="cform" id="cf" novalidate data-endpoint="https://formspree.io/f/xbgorooa">
       <div class="row2">
         <div class="fld"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
         <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></div>
       </div>
       <div class="row2">
         <div class="fld"><label for="f-club">Club or course</label><input id="f-club" name="club" required><span class="err" aria-live="polite"></span></div>
-        <div class="fld"><label for="f-pkg">Package</label><select id="f-pkg" name="pkg"><option>Not sure yet</option><option>Club Starter</option><option>Club Pro</option><option>Golf Premium</option></select></div>
+        <div class="fld"><label for="f-sport">Sport</label><select id="f-sport" name="sport" required><option value="">Choose a sport</option><option>Cricket</option><option>Rugby</option><option>Golf</option><option>Other</option></select><span class="err" aria-live="polite"></span></div>
       </div>
-      <div class="fld"><label for="f-msg">What do you need? <span class="opt">(optional)</span></label><textarea id="f-msg" name="msg"></textarea></div>
+      <div class="fld"><label for="f-pkg">Package</label><select id="f-pkg" name="pkg"><option>Not sure yet</option><option>Club Starter</option><option>Club Pro</option><option>Golf Premium</option></select></div>
+      <div class="fld"><label for="f-msg">Project details <span class="opt">(optional)</span></label><textarea id="f-msg" name="msg"></textarea></div>
+      <input type="hidden" name="_subject" value="New Clubhouse Digital enquiry">
       <div class="hp" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
-      <button class="btn" type="submit">Check my details <span aria-hidden="true">&rarr;</span></button>
-      <p class="fine">Until the form is connected, use the copy button after checking to keep your enquiry.</p>
+      <button class="btn" type="submit">Send my enquiry <span aria-hidden="true">&rarr;</span></button>
+      <p class="fine">We only use your details to reply to this enquiry.</p>
     </form>
     <div class="result" id="sent" hidden tabindex="-1"><h3>Thanks, we have your enquiry</h3><p>We will reply within two business days with next steps for your free preview.</p></div>
     <div class="result" id="result" hidden tabindex="-1"><h3>Nothing was sent</h3><p>Your details look fine, but this form isn't connected yet, so no message has been delivered. Copy your enquiry and send it once our email is live.</p><div class="btns"><button class="btn" type="button" id="copy">Copy my enquiry</button><button class="btn btn-o" type="button" id="again">Edit details</button></div></div>
@@ -454,7 +455,8 @@ form.addEventListener('submit',function(ev){
  ok=bad('#f-name',$('#f-name').value.trim()?'':'Please add your name.')&&ok;
  ok=bad('#f-email',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#f-email').value.trim())?'':'Please add a valid email.')&&ok;
  ok=bad('#f-club',$('#f-club').value.trim()?'':'Please add your club or course.')&&ok;
- if(!ok){var first=$('.fld[data-bad] input',form);if(first)first.focus();return}
+ ok=bad('#f-sport',$('#f-sport').value?'':'Please choose a sport.')&&ok;
+ if(!ok){var first=$('.fld[data-bad] input,.fld[data-bad] select',form);if(first)first.focus();return}
  /* INTEGRATION POINT: when a real endpoint exists, set data-endpoint on the form, POST the fields here,
     and only show a success message after the server confirms. Until then nothing is sent. */
  var ep=form.getAttribute('data-endpoint');
@@ -467,7 +469,7 @@ form.addEventListener('submit',function(ev){
 });
 $('#again').addEventListener('click',function(){res.hidden=true;form.hidden=false;$('#f-name').focus()});
 $('#copy').addEventListener('click',function(){
- var txt='Clubhouse Digital enquiry\nName: '+$('#f-name').value+'\nEmail: '+$('#f-email').value+'\nClub: '+$('#f-club').value+'\nPackage: '+$('#f-pkg').value+'\nNotes: '+$('#f-msg').value;
+ var txt='Clubhouse Digital enquiry\nName: '+$('#f-name').value+'\nEmail: '+$('#f-email').value+'\nClub: '+$('#f-club').value+'\nSport: '+$('#f-sport').value+'\nPackage: '+$('#f-pkg').value+'\nProject details: '+$('#f-msg').value;
  function fb(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast('Enquiry copied')}catch(e){toast('Select and copy manually')}document.body.removeChild(ta)}
  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){toast('Enquiry copied')},fb)}else fb()
 });
